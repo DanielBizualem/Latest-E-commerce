@@ -6,11 +6,19 @@ export default function signUp(){
             <h1 className="flex justify-center items-center text-2xl font-semibold border-b border-gray-100 mb-5">signUp</h1>
             <div className="flex flex-col gap-3">
                 <div className="flex flex-col gap-2">
+                    <label>Full Name:</label>
+                    <input type="text" className="flex-1 border border-gray-300 rounded-md bg-gray-50 focus:bg-white outline-none focus:border-blue-300 px-3 py-2 max-w-xl min-w-0"/>
+                </div>
+                <div className="flex flex-col gap-2">
                     <label>Email:</label>
                     <input type="email" className="flex-1 border border-gray-300 rounded-md bg-gray-50 focus:bg-white outline-none focus:border-blue-300 px-3 py-2 max-w-xl min-w-0"/>
                 </div>
                 <div className="flex flex-col gap-2">
                     <label>Password:</label>
+                    <input type="password" className="flex-1 border border-gray-300 rounded-md bg-gray-50 focus:bg-white outline-none focus:border-blue-300 px-3 py-2 max-w-xl min-w-0"/>
+                </div>
+                <div className="flex flex-col gap-2">
+                    <label>Confirm Password:</label>
                     <input type="password" className="flex-1 border border-gray-300 rounded-md bg-gray-50 focus:bg-white outline-none focus:border-blue-300 px-3 py-2 max-w-xl min-w-0"/>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
