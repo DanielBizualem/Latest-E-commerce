@@ -1,5 +1,13 @@
+"use client"
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 export default function LoginPage() {
+    const inputRef = useRef()
+
+    useEffect(()=>{
+        inputRef.current.focus()
+    })
+
     return (
       <div className="flex items-center justify-center w-full min-h-screen">
         <div className="flex-1 border border-gray-200 py-7 px-10 rounded-xl max-w-md mx-8 font-sans">
@@ -7,7 +15,7 @@ export default function LoginPage() {
             <div className="flex flex-col gap-3">
                 <div className="flex flex-col gap-2">
                     <label>Email:</label>
-                    <input type="email" className="flex-1 border border-gray-300 rounded-md bg-gray-50 focus:bg-white outline-none focus:border-blue-300 px-3 py-2 max-w-xl min-w-0"/>
+                    <input ref={inputRef} type="email" className="flex-1 border border-gray-300 rounded-md bg-gray-50 focus:bg-white outline-none focus:border-blue-300 px-3 py-2 max-w-xl min-w-0"/>
                 </div>
                 <div className="flex flex-col gap-2">
                     <label>Password:</label>

@@ -1,5 +1,13 @@
+"use client"
 import Link from "next/link"
+import { useEffect, useRef } from "react"
 export default function Hero(){
+    const inputRef = useRef()
+
+    useEffect(()=>{
+        inputRef.current.focus()
+    })
+
     return (
         <div className="w-full font-sans">
             {/** header */}
@@ -23,7 +31,7 @@ export default function Hero(){
                         <p className="sm:flex hidden text-xl font-bold text-blue-700">MegaMert</p>
                     </div>
                     <div className="flex relative mx-4 w-full max-w-2xl">
-                        <input type="text" className="flex flex-1 border border-gray-200 rounded-lg min-w-0 outline-none px-3 pl-10 py-1.5 bg-gray-100 focus:bg-white focus:border-blue-500 transition-all" placeholder="Search Product..."/>
+                        <input ref={inputRef} type="text" className="flex flex-1 border border-gray-200 rounded-lg min-w-0 outline-none px-3 pl-10 py-1.5 bg-gray-100 focus:bg-white focus:border-blue-500 transition-all" placeholder="Search Product..."/>
                         <img src="/blueSearch.png" alt="" className="absolute mt-2 w-5 items-center ml-2"/>
                     </div>
                     <div className="flex gap-3 items-center">

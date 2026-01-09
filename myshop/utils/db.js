@@ -1,0 +1,37 @@
+export const database = [
+    {
+        id:1,
+        name:"Daniel",
+        weight:78,
+        age:24,
+        school:"ASTU"
+    },
+    {
+        id:2,
+        name:"Chala",
+        weight:78,
+        age:24,
+        school:"ASTU"
+    },
+    {
+        id:3,
+        name:"Bontu",
+        weight:78,
+        age:24,
+        school:"ASTU"
+    },
+    {
+        id:4,
+        name:"Lami",
+        weight:78,
+        age:24,
+        school:"ASTU"
+    },
+    {
+        id:5,
+        name:"Sena",
+        weight:78,
+        age:24,
+        school:"ASTU"
+    }
+]
